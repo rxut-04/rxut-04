@@ -97,9 +97,9 @@
 
 <table align="center" width="100%" border="0">
 
-  <!-- ROW 1: 3 across -->
+  <!-- ROW 1 -->
   <tr>
-    <td colspan="2" width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>🧬 Languages</h3>
       <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
       <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
@@ -110,7 +110,7 @@
       <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
       <img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
     </td>
-    <td colspan="2" width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>🌐 Frontend</h3>
       <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
       <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
@@ -118,7 +118,11 @@
       <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
       <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
     </td>
-    <td colspan="2" width="33%" align="center" valign="top">
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td width="50%" align="center" valign="top">
       <h3>⚙️ Backend & Databases</h3>
       <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
       <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express" />
@@ -126,16 +130,16 @@
       <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
       <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
     </td>
-  </tr>
-
-  <!-- ROW 2: 2 across -->
-  <tr>
-    <td colspan="3" width="50%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>📱 Mobile & Desktop</h3>
       <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" />
       <img src="https://img.shields.io/badge/Tauri-24C8D8?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri" />
     </td>
-    <td colspan="3" width="50%" align="center" valign="top">
+  </tr>
+
+  <!-- ROW 3 -->
+  <tr>
+    <td width="50%" align="center" valign="top">
       <h3>🤖 AI, Vision & Hardware</h3>
       <img src="https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white&labelColor=101010" alt="OpenCV" />
       <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow" />
@@ -145,11 +149,7 @@
       <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib" />
       <img src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" alt="Raspberry Pi" />
     </td>
-  </tr>
-
-  <!-- ROW 3: independent full-width row -->
-  <tr>
-    <td colspan="6" width="100%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>🧰 Tools & Environment</h3>
       <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
       <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
