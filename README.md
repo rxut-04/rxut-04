@@ -3,9 +3,9 @@
 <!-- ============================================================ -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,6,18&height=240&section=header&text=Om+Raut&fontSize=60&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack+%E2%80%A2+Computer+Vision+%E2%80%A2+Hardware&descSize=18&descAlignY=58&animation=fadeIn">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,12&height=240&section=header&text=Om+Raut&fontSize=60&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack+%E2%80%A2+Computer+Vision+%E2%80%A2+Hardware&descSize=18&descAlignY=58&animation=fadeIn">
-    <img alt="Banner" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,6,18&height=240&section=header&text=Om+Raut&fontSize=60&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack+%E2%80%A2+Computer+Vision+%E2%80%A2+Hardware&descSize=18&descAlignY=58&animation=fadeIn" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,6,18&height=250&section=header&text=Om+Raut&fontSize=64&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack+%E2%80%A2+Computer+Vision+%E2%80%A2+Hardware+%E2%80%A2+Mobile&descSize=18&descAlignY=58&animation=fadeIn">
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,12&height=250&section=header&text=Om+Raut&fontSize=64&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack+%E2%80%A2+Computer+Vision+%E2%80%A2+Hardware+%E2%80%A2+Mobile&descSize=18&descAlignY=58&animation=fadeIn">
+    <img alt="Banner" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,6,18&height=250&section=header&text=Om+Raut&fontSize=64&fontColor=FFFFFF&fontAlignY=38&desc=Full-Stack+%E2%80%A2+Computer+Vision+%E2%80%A2+Hardware+%E2%80%A2+Mobile&descSize=18&descAlignY=58&animation=fadeIn" width="100%">
   </picture>
 </div>
 
@@ -19,7 +19,7 @@
 <!-- ============================================================ -->
 <div align="center">
   <a href="https://github.com/rxut-04">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FF69B4&center=true&vCenter=true&width=700&lines=Final-Year+IT+Student+%40+SVIT+Nashik;Full-Stack+%7C+Computer+Vision+%7C+Hardware+%7C+Mobile;I+build+things+that+actually+impress+%F0%9F%94%A5;AI+proctoring%2C+phishing+defense%2C+Kumbh+Mela+tech;Currently+levelling+up+in+React+%E2%9A%9B%EF%B8%8F" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FF69B4&center=true&vCenter=true&width=750&lines=Final-Year+IT+Student+%40+SVIT+Nashik;Full-Stack+%7C+Computer+Vision+%7C+Hardware+%7C+Mobile;I+build+things+that+actually+impress+%F0%9F%94%A5;AI+proctoring%2C+phishing+defense%2C+Kumbh+Mela+tech;Currently+levelling+up+in+React+%E2%9A%9B%EF%B8%8F" alt="Typing SVG" />
   </a>
 </div>
 
@@ -36,16 +36,13 @@
     <img src="https://img.shields.io/github/stars/rxut-04?style=for-the-badge&logo=starship&logoColor=white&labelColor=1a1a1a&color=FF69B4" alt="Stars" />
   </a>
   <img src="https://komarev.com/ghpvc/?username=rxut-04&style=for-the-badge&label=PROFILE+VIEWS&labelColor=1a1a1a&color=FF69B4" alt="Profile Views" />
-  <a href="https://github.com/rxut-04?tab=repositories">
-    <img src="https://img.shields.io/github/repo-size/rxut-04/rxut-04?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=1a1a1a&color=EF93C4&label=PROFILE+SIZE" alt="Repo Size" />
-  </a>
   <img src="https://img.shields.io/badge/STATUS-BUILDING-FF69B4?style=for-the-badge&labelColor=1a1a1a&logo=rocket&logoColor=white" alt="Status" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=800&color=F8BBD0&center=true&vCenter=true&width=600&lines=%E2%9C%A8+Ship+it.+Polish+it.+Present+it.;%F0%9F%9B%A0%EF%B8%8F+Code+is+only+half+the+project.+The+demo+is+the+other+half." alt="Tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=800&color=F8BBD0&center=true&vCenter=true&width=650&lines=%E2%9C%A8+Ship+it.+Polish+it.+Present+it.;%F0%9F%9B%A0%EF%B8%8F+Code+is+only+half+the+project.+The+demo+is+the+other+half." alt="Tagline" />
 </div>
 
 <br>
@@ -94,36 +91,69 @@
 <br>
 
 <!-- ============================================================ -->
-<!--                           TECH STACK                          -->
+<!--                  TECH STACK (BADGE CARDS)                     -->
 <!-- ============================================================ -->
-<h2 align="center">🛠️ Tech Stack</h2>
+<h2 align="center">💻 Tech Stack</h2>
 
-<div align="center">
-  <h3>🌐 Frontend</h3>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind&perline=6" alt="Frontend" />
-  </a>
+<h3 align="center">🧬 Languages</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+</p>
 
-  <h3>⚙️ Backend & Databases</h3>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,express,java,python,flask,mongodb,mysql&perline=7" alt="Backend" />
-  </a>
+<h3 align="center">🌐 Frontend</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+</p>
 
-  <h3>📱 Mobile & Desktop</h3>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=flutter,dart,tauri,rust&perline=4" alt="Mobile & Desktop" />
-  </a>
+<h3 align="center">⚙️ Backend & Databases</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express" />
+  <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+</p>
 
-  <h3>🤖 AI, Vision & Hardware</h3>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=opencv,tensorflow,sklearn,raspberrypi&perline=4" alt="AI & Hardware" />
-  </a>
+<h3 align="center">📱 Mobile & Desktop</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Tauri-24C8D8?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri" />
+</p>
 
-  <h3>🧰 Tools & Environment</h3>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,linux,kde,vscode,postman,figma,notion&perline=8" alt="Tools" />
-  </a>
-</div>
+<h3 align="center">🤖 AI, Vision & Hardware</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white&labelColor=101010" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
+  <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" alt="Raspberry Pi" />
+</p>
+
+<h3 align="center">🧰 Tools & Environment</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/KDE_Plasma-1D99F3?style=for-the-badge&logo=kde&logoColor=white" alt="KDE Plasma" />
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
+  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+  <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" alt="Canva" />
+  <img src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
+</p>
 
 <br>
 
@@ -184,6 +214,29 @@
 <br>
 
 <!-- ============================================================ -->
+<!--                  COMMIT HISTORY (DYNAMIC CHART)               -->
+<!-- ============================================================ -->
+<h2 align="center">📈 My Contribution Journey</h2>
+
+<p align="center"><i>Monthly activity + cumulative total, rebuilt automatically every 12 hours.</i></p>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rxut-04/rxut-04/main/assets/commit-chart-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rxut-04/rxut-04/main/assets/commit-chart-light.svg">
+    <img alt="Contribution history chart" src="https://raw.githubusercontent.com/rxut-04/rxut-04/main/assets/commit-chart-dark.svg" width="95%">
+  </picture>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rxut-04&bg_color=00000000&color=FF69B4&line=EF93C4&point=F8BBD0&area=true&area_color=F8BBD0&title_color=FF69B4&hide_border=true&radius=10" alt="Last 31 days activity" width="95%" />
+</div>
+
+<br>
+
+<!-- ============================================================ -->
 <!--                        GITHUB STATS                           -->
 <!-- ============================================================ -->
 <h2 align="center">📊 GitHub Stats</h2>
@@ -197,12 +250,6 @@
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=rxut-04&theme=transparent&hide_border=true&stroke=F8BBD0&ring=FF69B4&fire=EF93C4&currStreakNum=FF69B4&sideNums=FF69B4&currStreakLabel=EF93C4&sideLabels=F8BBD0&dates=F8BBD0&background=00000000" alt="GitHub Streak" width="85%" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rxut-04&bg_color=00000000&color=FF69B4&line=EF93C4&point=F8BBD0&area=true&area_color=F8BBD0&title_color=FF69B4&hide_border=true&radius=10" alt="Activity Graph" width="95%" />
 </div>
 
 <br>
@@ -240,8 +287,6 @@
     schedule:
       - cron: "0 0 * * *"
     workflow_dispatch:
-    push:
-      branches: [main]
   permissions:
     contents: write
   jobs:
@@ -263,6 +308,15 @@
 
   Then: Actions tab → "Generate Snake" → Run workflow (first run only).
 -->
+
+<br>
+
+<!-- ============================================================ -->
+<!--                          DEV QUOTE                            -->
+<!-- ============================================================ -->
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+</div>
 
 <br>
 
