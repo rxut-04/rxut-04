@@ -10,7 +10,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 USER = os.environ.get("GH_USER", "rxut-04")
-TOKEN = os.environ["GH_TOKEN"]
+TOKEN = os.environ.get("GH_TOKEN", "")
 STATIC = os.environ.get("STATIC") == "1"   # STATIC=1 -> final frame, no animation
 OUT = Path("cards")
 OUT.mkdir(exist_ok=True)
@@ -189,11 +189,12 @@ def hero(t):
             f'<stop offset="1" stop-color="{ROSE}"/></linearGradient>')
     face = ascii_portrait(dense_on_bright=(t["bg"] == THEMES["dark"]["bg"]))
     if face:
-        px = 520 + (274 - 56 * 3) // 2
+        px = 560
         lines = "".join(
-            f'<text class="rise" xml:space="preserve" x="{px}" y="{66 + i * 5}" font-family="{MONO}" '
+            f'<text class="rise" xml:space="preserve" x="{px}" y="{58 + i * 5}" font-family="{MONO}" '
             f'font-size="5" fill="{ink}" style="white-space:pre;animation-delay:{1.0 + i * 0.035:.3f}s">{escape(row)}</text>'
             for i, row in enumerate(face))
+        box = ""
         tail = ""
     else:
         term = [("$ whoami", PINK), ("om_raut", ink), ("$ ls stack/", PINK),
@@ -201,6 +202,8 @@ def hero(t):
         lines = "".join(
             f'<text class="rise" {dl(1.0 + i * 0.28)} x="540" y="{98 + i * 27}" font-family="{MONO}" '
             f'font-size="13" fill="{c}">{escape(s)}</text>' for i, (s, c) in enumerate(term))
+        box = f'''<rect x="520" y="34" width="274" height="222" rx="14" fill="{t["line"]}" opacity=".45"/>
+<circle cx="542" cy="54" r="5" fill="{PINK}"/><circle cx="560" cy="54" r="5" fill="{ROSE}"/><circle cx="578" cy="54" r="5" fill="{SOFT}"/>'''
         tail = f'<rect class="pulse" x="716" y="221" width="8" height="15" fill="{PINK}"/>'
     inner = f'''
 <circle class="pulse" cx="48" cy="50" r="5" fill="{PINK}"/>
@@ -209,8 +212,7 @@ def hero(t):
 <text class="rise" {dl(.55)} x="46" y="184" font-family="{SERIF}" font-size="24" font-style="italic" fill="{ink}">{escape(TAGLINE)}</text>
 <text class="rise" {dl(.75)} x="46" y="226" font-family="{MONO}" font-size="13.5" fill="{mut}">{escape(SUB1)}</text>
 <text class="rise" {dl(.9)} x="46" y="248" font-family="{MONO}" font-size="13.5" fill="{mut}">{escape(SUB2)}</text>
-<rect x="520" y="34" width="274" height="222" rx="14" fill="{t["line"]}" opacity=".45"/>
-<circle cx="542" cy="54" r="5" fill="{PINK}"/><circle cx="560" cy="54" r="5" fill="{ROSE}"/><circle cx="578" cy="54" r="5" fill="{SOFT}"/>
+{box}
 {lines}{tail}'''
     return card(W, H, inner, t["bg"], t["line"], defs)
 
