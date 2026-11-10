@@ -25,15 +25,17 @@ LEARN_BIG = "React"
 LEARN_CAP = "learning now · DSA in Java"
 # --------------------------------
 
-PINK, SOFT, ROSE, TILE_INK = "#FF69B4", "#F8BBD0", "#EF93C4", "#3A1228"
+BLUE, RED, YELLOW = "#2F55FF", "#EF3B2D", "#FDC518"
+ACCENT = BLUE
+PINK, SOFT, ROSE = BLUE, "#9DB0FF", "#6C85FF"
 SERIF = "Georgia, 'Times New Roman', serif"
 MONO = "ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace"
 
 THEMES = {
-    "dark": dict(bg="#1A0F16", ink="#FCE4EC", muted="#C48BA6", line="#3A2230",
-                 ramp=["#4A2A3C", "#8F3F66", "#D6538F", "#FF69B4"]),
-    "light": dict(bg="#FFF5F9", ink="#3A1228", muted="#9C5A7B", line="#F3CFE0",
-                  ramp=["#F8BBD0", "#F48FB1", "#FF69B4", "#D81B7A"]),
+    "dark": dict(bg="#161616", ink="#F4F3F0", muted="#9A9A95", line="#2A2A2A",
+                 ramp=["#1E2A5C", "#2F44A8", "#2F55FF", "#7C97FF"]),
+    "light": dict(bg="#F4F3F0", ink="#111111", muted="#77756F", line="#E2E0DA",
+                  ramp=["#C9D4FF", "#8FA6FF", "#4D6DFF", "#1A3BE0"]),
 }
 
 CSS = """
@@ -218,7 +220,7 @@ def months(t, daily):
     for i, (k, v) in enumerate(data):
         h = max(3, v / mx * max_h) if v else 3
         x = x0 + i * slot + (slot - bw) / 2
-        col = PINK if i == best else (ROSE if v else t["line"])
+        col = ACCENT if i == best else (t["ink"] if v else t["line"])
         bars += (f'<rect class="bar" {dl(round(.2 + i * .04, 2))} x="{x:.1f}" y="{base - h:.1f}" '
                  f'width="{bw:.1f}" height="{h:.1f}" rx="4" fill="{col}"/>')
         if (n - 1 - i) % 3 == 0:
@@ -249,15 +251,15 @@ def months(t, daily):
     return card(W, H, inner, t["bg"], t["line"])
 
 
-def tile(label, big, cap, bg, delay, bigsize=64):
+def tile(label, big, cap, bg, ink, delay, bigsize=64):
     W, H = 270, 200
     inner = f'''
-<circle class="ring" cx="236" cy="38" r="12" fill="none" stroke="{TILE_INK}" stroke-width="2"/>
-<circle cx="236" cy="38" r="5" fill="{TILE_INK}"/>
-<text x="24" y="44" font-family="{MONO}" font-size="13" letter-spacing="3" fill="{TILE_INK}" opacity=".75">{label}</text>
-<text class="pop" {dl(delay + .5)} x="24" y="124" font-family="{SERIF}" font-size="{bigsize}" fill="{TILE_INK}">{escape(big)}</text>
-<text class="rise" {dl(delay + .7)} x="24" y="154" font-family="{MONO}" font-size="12.5" fill="{TILE_INK}">{escape(cap)}</text>
-<text class="nudge" x="246" y="182" text-anchor="end" font-family="{SERIF}" font-size="30" fill="{TILE_INK}">→</text>'''
+<circle class="ring" cx="236" cy="38" r="12" fill="none" stroke="{ink}" stroke-width="2"/>
+<circle cx="236" cy="38" r="5" fill="{ink}"/>
+<text x="24" y="44" font-family="{MONO}" font-size="13" letter-spacing="3" fill="{ink}" opacity=".75">{label}</text>
+<text class="pop" {dl(delay + .5)} x="24" y="124" font-family="{SERIF}" font-size="{bigsize}" fill="{ink}">{escape(big)}</text>
+<text class="rise" {dl(delay + .7)} x="24" y="154" font-family="{MONO}" font-size="12.5" fill="{ink}">{escape(cap)}</text>
+<text class="nudge" x="246" y="182" text-anchor="end" font-family="{SERIF}" font-size="30" fill="{ink}">→</text>'''
     return card(W, H, inner, bg, bg, wrap=f'class="swing" {dl(delay)}')
 
 
@@ -270,7 +272,7 @@ if __name__ == "__main__":
         (OUT / f"months-{name}.svg").write_text(months(t, daily), encoding="utf-8")
     repos = meta["repositories"]["totalCount"]
     followers = meta["followers"]["totalCount"]
-    (OUT / "build.svg").write_text(tile("BUILD", str(repos), "public repos on GitHub", PINK, 2.2), encoding="utf-8")
-    (OUT / "learn.svg").write_text(tile("LEARN", LEARN_BIG, LEARN_CAP, ROSE, 2.5, 54), encoding="utf-8")
-    (OUT / "connect.svg").write_text(tile("CONNECT", str(followers), "followers · say hi", SOFT, 2.8), encoding="utf-8")
+    (OUT / "build.svg").write_text(tile("BUILD", str(repos), "public repos on GitHub", BLUE, "#FFFFFF", 2.2), encoding="utf-8")
+    (OUT / "learn.svg").write_text(tile("LEARN", LEARN_BIG, LEARN_CAP, RED, "#FFFFFF", 2.5, 54), encoding="utf-8")
+    (OUT / "connect.svg").write_text(tile("CONNECT", str(followers), "followers · say hi", YELLOW, "#111111", 2.8), encoding="utf-8")
     print("Cards written to ./cards")
