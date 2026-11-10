@@ -149,16 +149,59 @@ def dl(s):
 
 
 # ---------------------------------------------------------------- cards
+def ascii_portrait(cols=56, rows=36, dense_on_bright=True):
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        return None
+    path = next((p for p in ("assets/portrait.jpg", "assets/portrait.jpeg", "assets/portrait.png")
+                 if Path(p).exists()), None)
+    if not path:
+        return None
+    img = ImageOps.autocontrast(Image.open(path).convert("L"), cutoff=2)
+    target = (cols * 3) / (rows * 5)
+    w, h = img.size
+    if w / h > target:
+        nw = int(h * target)
+        img = img.crop(((w - nw) // 2, 0, (w + nw) // 2, h))
+    else:
+        nh = int(w / target)
+        top = (h - nh) // 4
+        img = img.crop((0, top, w, top + nh))
+    img = img.resize((cols, rows))
+    ramp = " .:-=+*#%@"
+    out = []
+    for y in range(rows):
+        row = ""
+        for x in range(cols):
+            v = img.getpixel((x, y)) / 255
+            if not dense_on_bright:
+                v = 1 - v
+            row += ramp[int(v * (len(ramp) - 1))]
+        out.append(row.rstrip())
+    return out
+
+
 def hero(t):
     W, H = 830, 290
     ink, mut = t["ink"], t["muted"]
     defs = (f'<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="{PINK}"/>'
             f'<stop offset="1" stop-color="{ROSE}"/></linearGradient>')
-    term = [("$ whoami", PINK), ("om_raut", ink), ("$ ls stack/", PINK),
-            ("fullstack  cv  hw  mobile", ink), ("$ status", PINK), ("building something big", ink)]
-    lines = "".join(
-        f'<text class="rise" {dl(1.0 + i * 0.28)} x="540" y="{98 + i * 27}" font-family="{MONO}" '
-        f'font-size="13" fill="{c}">{escape(s)}</text>' for i, (s, c) in enumerate(term))
+    face = ascii_portrait(dense_on_bright=(t["bg"] == THEMES["dark"]["bg"]))
+    if face:
+        px = 520 + (274 - 56 * 3) // 2
+        lines = "".join(
+            f'<text class="rise" xml:space="preserve" x="{px}" y="{66 + i * 5}" font-family="{MONO}" '
+            f'font-size="5" fill="{ink}" style="white-space:pre;animation-delay:{1.0 + i * 0.035:.3f}s">{escape(row)}</text>'
+            for i, row in enumerate(face))
+        tail = ""
+    else:
+        term = [("$ whoami", PINK), ("om_raut", ink), ("$ ls stack/", PINK),
+                ("fullstack  cv  hw  mobile", ink), ("$ status", PINK), ("building something big", ink)]
+        lines = "".join(
+            f'<text class="rise" {dl(1.0 + i * 0.28)} x="540" y="{98 + i * 27}" font-family="{MONO}" '
+            f'font-size="13" fill="{c}">{escape(s)}</text>' for i, (s, c) in enumerate(term))
+        tail = f'<rect class="pulse" x="716" y="221" width="8" height="15" fill="{PINK}"/>'
     inner = f'''
 <circle class="pulse" cx="48" cy="50" r="5" fill="{PINK}"/>
 <text class="rise" {dl(.1)} x="62" y="55" font-family="{MONO}" font-size="13" fill="{mut}">{escape(STATUS)}</text>
@@ -168,8 +211,7 @@ def hero(t):
 <text class="rise" {dl(.9)} x="46" y="248" font-family="{MONO}" font-size="13.5" fill="{mut}">{escape(SUB2)}</text>
 <rect x="520" y="34" width="274" height="222" rx="14" fill="{t["line"]}" opacity=".45"/>
 <circle cx="542" cy="54" r="5" fill="{PINK}"/><circle cx="560" cy="54" r="5" fill="{ROSE}"/><circle cx="578" cy="54" r="5" fill="{SOFT}"/>
-{lines}
-<rect class="pulse" x="716" y="221" width="8" height="15" fill="{PINK}"/>'''
+{lines}{tail}'''
     return card(W, H, inner, t["bg"], t["line"], defs)
 
 
