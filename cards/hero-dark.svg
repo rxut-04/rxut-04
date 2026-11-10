@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="290" viewBox="0 0 830 290" role="img"><style>
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.3)}70%{opacity:1;transform:scale(1.18)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes swing{0%{opacity:0;transform:translateY(46px) rotate(-6deg)}60%{opacity:1;transform:translateY(-7px) rotate(1.5deg)}100%{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes ring{0%{transform:scale(.6);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}
+@keyframes sweep{0%,55%{transform:translateX(-120px) skewX(-18deg)}100%{transform:translateX(950px) skewX(-18deg)}}
+.rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .55s cubic-bezier(.2,.9,.3,1.2) both}
+.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.swing{transform-box:fill-box;transform-origin:bottom left;animation:swing .95s cubic-bezier(.2,.9,.3,1.1) both}
+.pulse{animation:pulse 2s ease-in-out infinite}
+.ring{transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+.nudge{animation:nudge 1.6s ease-in-out infinite}
+.sweep{animation:sweep 5s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><defs><clipPath id="c"><rect width="830" height="290" rx="22"/></clipPath><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FF69B4"/><stop offset="1" stop-color="#EF93C4"/></linearGradient></defs><g ><rect x="1" y="1" width="828" height="288" rx="22" fill="#1A0F16" stroke="#3A2230" stroke-width="2"/><g clip-path="url(#c)"><rect class="sweep" x="0" y="-40" width="70" height="370" fill="#FF69B4" opacity=".10"/></g>
+<circle class="pulse" cx="48" cy="50" r="5" fill="#FF69B4"/>
+<text class="rise" style="animation-delay:0.1s" x="62" y="55" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#C48BA6">Open to internships &amp; collabs</text>
+<text class="rise" style="animation-delay:0.25s" x="42" y="140" font-family="Georgia, 'Times New Roman', serif" font-size="80" fill="url(#g)">Om Raut</text>
+<text class="rise" style="animation-delay:0.55s" x="46" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-style="italic" fill="#FCE4EC">I build things that actually impress.</text>
+<text class="rise" style="animation-delay:0.75s" x="46" y="226" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13.5" fill="#C48BA6">Final-year IT student @ SVIT Nashik</text>
+<text class="rise" style="animation-delay:0.9s" x="46" y="248" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13.5" fill="#C48BA6">Full-stack · Computer Vision · Hardware · Mobile</text>
+<rect x="520" y="34" width="274" height="222" rx="14" fill="#3A2230" opacity=".45"/>
+<circle cx="542" cy="54" r="5" fill="#FF69B4"/><circle cx="560" cy="54" r="5" fill="#EF93C4"/><circle cx="578" cy="54" r="5" fill="#F8BBD0"/>
+<text class="rise" style="animation-delay:1.0s" x="540" y="98" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#FF69B4">$ whoami</text><text class="rise" style="animation-delay:1.28s" x="540" y="125" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#FCE4EC">om_raut</text><text class="rise" style="animation-delay:1.56s" x="540" y="152" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#FF69B4">$ ls stack/</text><text class="rise" style="animation-delay:1.84s" x="540" y="179" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#FCE4EC">fullstack  cv  hw  mobile</text><text class="rise" style="animation-delay:2.12s" x="540" y="206" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#FF69B4">$ status</text><text class="rise" style="animation-delay:2.4000000000000004s" x="540" y="233" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#FCE4EC">building something big</text>
+<rect class="pulse" x="716" y="221" width="8" height="15" fill="#FF69B4"/></g></svg>

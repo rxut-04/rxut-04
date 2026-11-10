@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="200" viewBox="0 0 270 200" role="img"><style>
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.3)}70%{opacity:1;transform:scale(1.18)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes swing{0%{opacity:0;transform:translateY(46px) rotate(-6deg)}60%{opacity:1;transform:translateY(-7px) rotate(1.5deg)}100%{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes ring{0%{transform:scale(.6);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}
+@keyframes sweep{0%,55%{transform:translateX(-120px) skewX(-18deg)}100%{transform:translateX(950px) skewX(-18deg)}}
+.rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .55s cubic-bezier(.2,.9,.3,1.2) both}
+.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.swing{transform-box:fill-box;transform-origin:bottom left;animation:swing .95s cubic-bezier(.2,.9,.3,1.1) both}
+.pulse{animation:pulse 2s ease-in-out infinite}
+.ring{transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+.nudge{animation:nudge 1.6s ease-in-out infinite}
+.sweep{animation:sweep 5s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><defs><clipPath id="c"><rect width="270" height="200" rx="22"/></clipPath></defs><g class="swing" style="animation-delay:2.5s"><rect x="1" y="1" width="268" height="198" rx="22" fill="#EF93C4" stroke="#EF93C4" stroke-width="2"/><g clip-path="url(#c)"><rect class="sweep" x="0" y="-40" width="70" height="280" fill="#FF69B4" opacity=".10"/></g>
+<circle class="ring" cx="236" cy="38" r="12" fill="none" stroke="#3A1228" stroke-width="2"/>
+<circle cx="236" cy="38" r="5" fill="#3A1228"/>
+<text x="24" y="44" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" letter-spacing="3" fill="#3A1228" opacity=".75">LEARN</text>
+<text class="pop" style="animation-delay:3.0s" x="24" y="124" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#3A1228">React</text>
+<text class="rise" style="animation-delay:3.2s" x="24" y="154" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#3A1228">learning now · DSA in Java</text>
+<text class="nudge" x="246" y="182" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#3A1228">→</text></g></svg>
